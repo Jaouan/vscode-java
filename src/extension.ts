@@ -593,7 +593,7 @@ function setProjectConfigurationUpdate(languageClient: LanguageClient, uri: Uri,
 	}
 }
 function isJavaConfigFile(path: String) {
-	return path.endsWith('pom.xml') || path.endsWith('.gradle');
+	return path.endsWith('pom.xml') || path.endsWith('.gradle') || path.endsWith('.gradle.kts');
 }
 
 function getTempWorkspace() {
